@@ -1,0 +1,20 @@
+.rtr-ripple-wrapper-exiting {
+  opacity: 0;
+  animation: rtr-ripple-exit 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rtr-ripple-entering {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: rtr-ripple-enter 500ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+@keyframes rtr-ripple-enter {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes rtr-ripple-exit {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
